@@ -16,7 +16,7 @@ A própria definição da série de Fibonacci já divide o problema de calcular 
 
 <p align="center"><img src="imgs/fibonacci.png?raw=true" alt="Fibonacci Tree" title="Fibonacci Tree"></p>
 
-`f(n)` vai executar de `f(n-1)` e `f(n-2)`, por sua vez, `f(n-1)` vai executar `f(n-2)` e `f(n-3)`.
+`f(n)` vai executar de `f(n-1)` e `f(n-2)`, por sua vez, `f(n-1)` vai executar `f(n-2)` e `f(n-3)` e assim por diante.
 
 Expandindo a árvore de chamadas para `f(7)` temos
 
