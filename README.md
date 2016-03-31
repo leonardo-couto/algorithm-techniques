@@ -13,6 +13,8 @@ int fibonacci(int n) {
 
 A própria definição da série de Fibonacci já divide o problema de calcular `f(n)` em dois problemas menores, o de calcular `f(n-1)` e `f(n-2)`. Portanto o código acima é um exemplo da técnica de divisão e conquista. Ao executar esse código temos a seguinte árvore de execução:
 
+![Fibonacci Tree](imgs/fibonacci.png?raw=true "Fibonacci Tree")
+
  fn
  fn-1  fn-2
  fn-2 fn-3 ...
@@ -22,7 +24,7 @@ A própria definição da série de Fibonacci já divide o problema de calcular 
 
 Expandindo a árvore de chamadas para `f(10)` temos
 
-ARVORE
+![Fibonacci Tree](imgs/fibonacci7.png?raw=true "Fibonacci Tree")
 
 Todos os valores da árvore que não estão marcados em azul são valores repetidos, pois aparecem em algum lugar da linha azul. O método de programação dinâmica reaproveita o cálculo desses valores para diminuir o tempo de execução do algoritmo. A solução para a cálculo do Fibonacci usando essa técnica é começar a calcular os valores de baixo para cima até chegar no valor de f(n).
 
