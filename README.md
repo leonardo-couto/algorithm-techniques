@@ -17,7 +17,7 @@ A própria definição da série de Fibonacci já divide o problema de calcular 
 
 `f(n)` vai executar de `f(n-1)` e `f(n-2)`, por sua vez, `f(n-1)` vai executar `f(n-2)` e `f(n-3)`.
 
-Expandindo a árvore de chamadas para `f(10)` temos
+Expandindo a árvore de chamadas para `f(7)` temos
 
 ![Expanded Fibonacci Tree for f(7)](imgs/fibonacci7.png?raw=true "Expanded Fibonacci Tree for f(7)")
 
