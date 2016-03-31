@@ -35,8 +35,7 @@ int fibonacci(int n) {
   return current;
 }
 ```
-
-MOSTRAR DIFERENCA DE TEMPO DE EXECUCAO
+Executando o algoritmo anterior, para `f(47)` o tempo de execução foi de aproximadamente `22500ms`, com a versão usando programação dinâmica o tempo de execução na mesma máquina foi de apenas `0.007ms`.
 
 Nem todos os problemas podem ser quebrados em problemas menores e nem todos os problemas que podem ser quebrados tem subproblemas em comum. Portanto o primeiro passo para tentar aplicar esse método é tentar dividir o problema em problemas menores, se for, analisar se os problemas menores se repetem.
 
