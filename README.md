@@ -15,16 +15,11 @@ A própria definição da série de Fibonacci já divide o problema de calcular 
 
 ![Fibonacci Tree](imgs/fibonacci.png?raw=true "Fibonacci Tree")
 
- fn
- fn-1  fn-2
- fn-2 fn-3 ...
-    ...
-
 `f(n)` vai executar de `f(n-1)` e `f(n-2)`, por sua vez, `f(n-1)` vai executar `f(n-2)` e `f(n-3)`.
 
 Expandindo a árvore de chamadas para `f(10)` temos
 
-![Fibonacci Tree](imgs/fibonacci7.png?raw=true "Fibonacci Tree")
+![Expanded Fibonacci Tree for f(7)](imgs/fibonacci7.png?raw=true "Expanded Fibonacci Tree for f(7)")
 
 Todos os valores da árvore que não estão marcados em azul são valores repetidos, pois aparecem em algum lugar da linha azul. O método de programação dinâmica reaproveita o cálculo desses valores para diminuir o tempo de execução do algoritmo. A solução para a cálculo do Fibonacci usando essa técnica é começar a calcular os valores de baixo para cima até chegar no valor de f(n).
 
