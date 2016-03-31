@@ -13,7 +13,7 @@ int fibonacci(int n) {
 
 A própria definição da série de Fibonacci já divide o problema de calcular `f(n)` em dois problemas menores, o de calcular `f(n-1)` e `f(n-2)`. Portanto o código acima é um exemplo da técnica de divisão e conquista. Ao executar esse código temos a seguinte árvore de execução:
 
-![Fibonacci Tree](imgs/fibonacci.png?raw=true "Fibonacci Tree")
+<span align="center">![Fibonacci Tree](imgs/fibonacci.png "Fibonacci Tree")</span>
 
 `f(n)` vai executar de `f(n-1)` e `f(n-2)`, por sua vez, `f(n-1)` vai executar `f(n-2)` e `f(n-3)`.
 
