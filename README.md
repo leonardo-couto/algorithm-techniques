@@ -39,7 +39,7 @@ int fibonacci(int n) {
 ```
 Executando o algoritmo anterior, para `f(47)` o tempo de execução foi de aproximadamente `22500ms`, com a versão usando programação dinâmica o tempo de execução na mesma máquina foi de apenas `0.007ms`.
 
-Nem todos os problemas podem ser quebrados em problemas menores e nem todos os problemas que podem ser quebrados tem subproblemas em comum. Portanto o primeiro passo para tentar aplicar esse método é tentar dividir o problema em problemas menores, se for, analisar se os problemas menores se repetem.
+Nem todos os problemas podem ser quebrados em problemas menores e nem todos os problemas que podem ser quebrados tem subproblemas em comum. Portanto o primeiro passo para tentar aplicar esse método é tentar dividir o problema em problemas menores, se for possível, analisar se os problemas menores se repetem.
 
 Saber dividir o problema e identificar os subproblemas comuns é uma tarefa bastante difícil. A melhor maneira para desenvolver uma intuição de como usar programação dinâmica é vendo exemplos e resolvendo diferentes problemas. Abaixo segue uma lista de exemplos de solução usando essa técnica.
 
