@@ -2,7 +2,7 @@
 
 É uma técnica de resolução de problemas que consiste em dividir o problema em mais de uma parte, resolver essas partes individualmente e combinar os resultados, parecido com o método de divisão e conquista. A programação dinâmica difere da divisão e conquista pois é aplicada a problemas onde as partes dos subproblemas gerados ao dividir o problema original se repetem e o calculo delas é reaproveitado.
 
-Para podermos aplicar a programação dinâmica o problema precisa primeiro poder ser quebrado em partes menores. Por exemplo, a sequência de Fibonacci (1, 2, 3, 5, 8, 13, 19, 32, ...) é definida como `f(n) = f(n-1) + f(n-2)`. Ou em Java:
+Para podermos aplicar a programação dinâmica o problema precisa primeiro poder ser quebrado em partes menores. Por exemplo, a sequência de Fibonacci (0, 1, 1, 2, 3, 5, 8, 13, 19, 32, ...) é definida como `f(n) = f(n-1) + f(n-2)`. Ou em Java:
 
 ```Java
 int fibonacci(int n) {
@@ -18,7 +18,7 @@ A própria definição da série de Fibonacci já divide o problema de calcular 
 
 `f(n)` vai executar de `f(n-1)` e `f(n-2)`, por sua vez, `f(n-1)` vai executar `f(n-2)` e `f(n-3)` e assim por diante.
 
-Expandindo a árvore de chamadas para `f(7)` temos
+Expandindo a árvore de chamadas para `f(7)` temos:
 
 <p align="center"><img src="imgs/fibonacci7.png?raw=true" alt="Expanded Fibonacci Tree for f(7)" title="Expanded Fibonacci Tree for f(7)"></p>
 
