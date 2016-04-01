@@ -41,7 +41,7 @@ Executando o algoritmo anterior, para `f(47)` o tempo de execução foi de aprox
 
 Nem todos os problemas podem ser quebrados em problemas menores e nem todos os problemas que podem ser quebrados tem subproblemas em comum. Portanto o primeiro passo para tentar aplicar esse método é tentar dividir o problema em problemas menores, se for possível, analisar se os problemas menores se repetem.
 
-Saber dividir o problema e identificar os subproblemas comuns é uma tarefa bastante difícil. A melhor maneira para desenvolver uma intuição de como usar programação dinâmica é vendo exemplos e resolvendo diferentes problemas. Abaixo segue uma lista de exemplos de solução usando essa técnica.
+Saber dividir o problema e identificar os subproblemas comuns é uma tarefa bastante difícil. A melhor maneira para desenvolver uma intuição de como usar programação dinâmica é vendo exemplos e resolvendo diferentes problemas. Abaixo segue uma lista de exemplos de soluções que usam essa técnica.
 
  * [Multiplicação de Matrizes](https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_din%C3%A2mica#Exemplo_Multiplica.C3.A7.C3.A3o_de_Cadeia_de_Matrizes_.5B2.5D).
  * [Dijkstra](https://en.wikipedia.org/wiki/Dijkstra's_algorithm) (Inglês).
