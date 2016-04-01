@@ -43,5 +43,6 @@ Nem todos os problemas podem ser quebrados em problemas menores e nem todos os p
 
 Saber dividir o problema e identificar os subproblemas comuns é uma tarefa bastante difícil. A melhor maneira para desenvolver uma intuição de como usar programação dinâmica é vendo exemplos e resolvendo diferentes problemas. Abaixo segue uma lista de exemplos de soluções que usam essa técnica.
 
- * [Multiplicação de Matrizes](https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_din%C3%A2mica#Exemplo_Multiplica.C3.A7.C3.A3o_de_Cadeia_de_Matrizes_.5B2.5D).
+ * [Multiplicação de matrizes](https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_din%C3%A2mica#Exemplo_Multiplica.C3.A7.C3.A3o_de_Cadeia_de_Matrizes_.5B2.5D) (Português).
+ * [Explicação alternativa e outros exemplos](http://www.ime.usp.br/~pf/analise_de_algoritmos/aulas/dynamic-programming.html) (Português). 
  * [Dijkstra](https://en.wikipedia.org/wiki/Dijkstra's_algorithm) (Inglês).
