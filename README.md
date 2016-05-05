@@ -40,11 +40,44 @@ Na busca em profundidade os nós vizinhos são explorados recursivamente, indo e
 
 <p align="center"><img src="imgs/depth-first-search.gif?raw=true" alt="Depth first search example" title="Depth first search example" width="250px" height="250px"><br><sub>Exemplo de execução de uma busca em profundidade (<a href="https://commons.wikimedia.org/wiki/File:Depth-First-Search.gif">fonte</a>)</sub></p>
 
+Implementação em Java:
+
+```Java
+void dfs(Node node) {
+  node.label = DISCOVERED;
+  for (Node n : node.neighbours()) {
+    if (n.label != DISCOVERED) {
+      dfs(n);
+    }
+  }
+}
+```
+
 ### Busca em largura
 
 Na busca em largura é usado uma fila para visitar todos os vizinhos antes de explorar o próximo nível.
 
 <p align="center"><img src="imgs/breadth-first-search.gif?raw=true" alt="Breadth first search example" title="Breadth first search example" width="250px" height="250px"><br><sub>Exemplo de execução de uma busca em largura (<a href="https://commons.wikimedia.org/wiki/File:Breadth-First-Search-Algorithm.gif">fonte</a>)</sub></p>
+
+Implementação em Java:
+
+```Java
+void bfs(Node root) {
+	Queue<Node> queue = new LinkedList<>();
+	queue.add(root);
+
+	while (!queue.isEmpty()) {
+		Node current = queue.remove();
+		current.label = DISCOVERED;
+
+		for (Node n : current.neighbours()) {
+			if (n.label != DISCOVERED) {
+				queue.add(n);
+			}
+		}
+	}
+}
+```
 
 # Programação Dinâmica
 
