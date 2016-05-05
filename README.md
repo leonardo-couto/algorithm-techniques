@@ -63,7 +63,7 @@ Implementação em Java:
 
 ```Java
 void bfs(Node root) {
-Queue<Node> queue = new LinkedList<>();
+  Queue<Node> queue = new LinkedList<>();
   queue.add(root);
 
   while (!queue.isEmpty()) {
