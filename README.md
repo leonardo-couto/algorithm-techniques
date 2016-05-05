@@ -1,3 +1,33 @@
+# Grafos
+
+Um grafo é uma estrutura que representa um conjunto de vertices (ou nós) conectados entre si por arestas. As arestas podem ou não ser direcionadas dependendo do tipo do grafo.
+
+<p align="center"><img src="imgs/6n-graf.png?raw=true" alt="Simple Graph" title="Simple Graph"><br><sub>Desenho de um grafo não direcionado simples</sub></p>
+
+Existem várias formas de representar um grafo computacionalmente. Duas das mais comuns são:
+
+#### Lista de Adjacências
+O Grafo é um conjunto de nós e um nó é uma estrutura que contém o valor do nó em si e um conjunto de nós vizinhos. Dois nós são considerados vizinhos se eles compartilham uma aresta. Exemplo:
+
+```Java
+class Graph<T> {
+  Set<Node<T>> nodes;
+}
+
+class Node<T> {
+  T valor;
+  Set<Node<T>> vizinhos;
+}
+```
+#### Matriz de adjacência
+Uma matriz bi-dimensional em que as linhas representam nós de origem e as colunas os de destino. Aqui cada vértice é identificado por um inteiro (índice da matriz). Existe uma aresta entre os nós `i`, e `j` se a matriz de adjacência `M` conter um valor `M[i][j] = true`.
+
+```Java
+boolean[][] grafo;
+```
+
+Esse modelo é interessante para grafos com até uma certa quantidade de vértices. Para grafos esparsos e com muitos vértices o modelo de lista de adjacências é mais indicado.
+
 # Programação Dinâmica
 
 É uma técnica de resolução de problemas que consiste em dividir o problema em mais de uma parte, resolver essas partes individualmente e combinar os resultados, parecido com o método de divisão e conquista. A programação dinâmica difere da divisão e conquista pois é aplicada a problemas onde as partes dos subproblemas gerados ao dividir o problema original se repetem e o calculo delas é reaproveitado.
@@ -8,7 +38,7 @@ Para podermos aplicar a programação dinâmica o problema precisa primeiro pode
 int fibonacci(int n) {
   if (n <= 0) return 0;
   if (n == 1) return 1;
-  return fibonacci(n - 1) + fibonnaci(n - 2);
+  return fibonacci(n - 1) + fibonacci(n - 2);
 }
 ```
 
