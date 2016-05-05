@@ -63,19 +63,19 @@ Implementação em Java:
 
 ```Java
 void bfs(Node root) {
-	Queue<Node> queue = new LinkedList<>();
-	queue.add(root);
+Queue<Node> queue = new LinkedList<>();
+  queue.add(root);
 
-	while (!queue.isEmpty()) {
-		Node current = queue.remove();
-		current.label = DISCOVERED;
+  while (!queue.isEmpty()) {
+    Node current = queue.remove();
+    current.label = DISCOVERED;
 
-		for (Node n : current.neighbours()) {
-			if (n.label != DISCOVERED) {
-				queue.add(n);
-			}
-		}
-	}
+    for (Node n : current.neighbours()) {
+      if (n.label != DISCOVERED) {
+        queue.add(n);
+      }
+    }
+  }
 }
 ```
 
