@@ -2,7 +2,7 @@
 
 Um grafo é uma estrutura que representa um conjunto de vertices (ou nós) conectados entre si por arestas. As arestas podem ou não ser direcionadas dependendo do tipo do grafo.
 
-<p align="center"><img src="imgs/6n-graf.png?raw=true" alt="Simple Graph" title="Simple Graph"><br><sub>Desenho de um grafo não direcionado simples</sub></p>
+<p align="center"><img src="../imgs/6n-graf.png?raw=true" alt="Simple Graph" title="Simple Graph"><br><sub>Desenho de um grafo não direcionado simples</sub></p>
 
 ## Estrutura de dados
 
@@ -38,7 +38,7 @@ Para percorrer um grafo sem correr o risco de entrar em um loop infinito é nece
 
 Na busca em profundidade os nós vizinhos são explorados recursivamente, indo em cada ramo do grafo até onde é possível, antes de voltar para trás e explorar os demais vizinhos.
 
-<p align="center"><img src="imgs/depth-first-search.gif?raw=true" alt="Depth first search example" title="Depth first search example" width="250px" height="250px"><br><sub>Exemplo de execução de uma busca em profundidade (<a href="https://commons.wikimedia.org/wiki/File:Depth-First-Search.gif">fonte</a>)</sub></p>
+<p align="center"><img src="../imgs/depth-first-search.gif?raw=true" alt="Depth first search example" title="Depth first search example" width="250px" height="250px"><br><sub>Exemplo de execução de uma busca em profundidade (<a href="https://commons.wikimedia.org/wiki/File:Depth-First-Search.gif">fonte</a>)</sub></p>
 
 Implementação em Java:
 
@@ -57,7 +57,7 @@ void dfs(Node node) {
 
 Na busca em largura é usado uma fila para visitar todos os vizinhos antes de explorar o próximo nível.
 
-<p align="center"><img src="imgs/breadth-first-search.gif?raw=true" alt="Breadth first search example" title="Breadth first search example" width="250px" height="250px"><br><sub>Exemplo de execução de uma busca em largura (<a href="https://commons.wikimedia.org/wiki/File:Breadth-First-Search-Algorithm.gif">fonte</a>)</sub></p>
+<p align="center"><img src="../imgs/breadth-first-search.gif?raw=true" alt="Breadth first search example" title="Breadth first search example" width="250px" height="250px"><br><sub>Exemplo de execução de uma busca em largura (<a href="https://commons.wikimedia.org/wiki/File:Breadth-First-Search-Algorithm.gif">fonte</a>)</sub></p>
 
 Implementação em Java:
 
